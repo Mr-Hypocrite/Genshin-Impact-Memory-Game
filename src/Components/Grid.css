@@ -1,0 +1,54 @@
+.grid-comp .grid {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10rem;
+    row-gap: 2rem;
+}
+
+.grid-comp .char-imgs, .card-back {
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+}
+
+.grid-comp .img-bg {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-comp .img-bg:hover {
+    opacity: 0.9;
+}
+
+.grid-comp .card-back {
+    background-color: rgba(255, 255, 255, 1);
+    object-fit: contain;
+}
+
+.img-bg .char-imgs {
+    transform: rotateY(90deg);
+    position: absolute;
+}
+
+.flipped .char-imgs {
+    transform: rotateY(0deg);
+}
+
+.flipped .card-back {
+    transform: rotateY(90deg);
+}
+
+.matched .char-imgs {
+    transform: rotateY(0deg);
+}
+
+.matched .card-back {
+    transform: rotateY(90deg);
+}
